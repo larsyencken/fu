@@ -17,12 +17,11 @@ Fu makes commandlinefu more accessible because I find that I use
 
 ## How do I use it?
 
-It's easy to install, all you need to do is download and make
+Fu is best installed with `pip`
 
 ```
 $ git clone git://github.com/samirahmed/fu.git
-$ cd fu/
-$ sudo make install
+$ sudo pip install fu
 ```
 
 If that last step doesn't work you can use the setup.py
@@ -33,13 +32,13 @@ You can query fu by adding any search terms as arguments
 
 For example if you want to search for how to "send binary mail attachment"
 
-		$ fu send binary mail attachment                                           
+		$ fu send binary mail attachment
 		 1	#  Send email with one or more binary attachments
 			echo "Body goes here" | mutt -s "A subject" -a /path/to/file.tar.gz recipient@example.com
-			
+
 		 2	#  Send a binary file as an attachment to an email
 			uuencode archive.tar.gz archive.tar.gz | mail -s "Emailing: archive.tar.gz" user@example.com
-			
+
 			498ms total:2
 
 ### Dependencies and Fixes
@@ -47,16 +46,15 @@ For example if you want to search for how to "send binary mail attachment"
 It is possible you might not have some dependencies like argparse installed.
 
 	$ sudo easy_install argparse
-	
-See the [wiki] for more help  
+
+See the [wiki] for more help
 
 ## Uninstalling
 
-To remove fu you can do automagically with 
+To remove fu you can do automagically with
 
 ```
-$ cd fu/
-$ sudo make uninstall
+$ sudo pip uninstall fu
 ```
 
 Or you can do it manually by finding the files from your installRecords.txt file and removing them

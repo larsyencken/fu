@@ -11,4 +11,5 @@ setup(
     url="http://github.com/samirahmed/fu",
     packages=['fu_core'],
     scripts=['fu'],
+    install_requires=['argparse>=1.2.1'],
 )
